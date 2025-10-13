@@ -1,3 +1,6 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+#criando a view para puxar pra urls depois 
+def home(request):
+    return render(request, 'login/validacao.html')
