@@ -2,11 +2,12 @@
 <!--   **************          CSS DISSO TA EM STYLES_ADMIN.CSS    ********************              -->
 <!DOCTYPE html>
 <html lang="pt-br">
+{% load static %}
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles_admin.css">
+    <link rel="stylesheet" href="{% static 'login/css/styles_admin.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -27,18 +28,20 @@
             </div>
 
             <div class="formulario">
-                <form action="" class="form">
+                <form action="{% url 'home' %}" method="POST" class="form">
+                    {% csrf_token %}
+
                     <div class="linp">
                         <label for="usuario">Usuário:</label>
-                        <input type="text" name="usuario" required>
+                        <input type="text" name="username" required>
                     </div>
 
                     <div class="linp">
                         <label for="senha">Senha:</label>
-                        <input type="text" name="senha" required>
+                        <input type="password" name="password" required>
                     </div>
 
-                    <button class="btn">Enviar</button>
+                    <button class="btn" type="submit">Enviar</button>
                 </form>
             </div>
         </div>

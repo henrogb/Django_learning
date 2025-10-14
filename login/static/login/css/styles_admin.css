@@ -1,0 +1,229 @@
+:root{
+    --azul-acinzentado: #515559;
+    --terracota: #EA785B;
+    --azulbase: #3C415A;
+    --off-white:  #F7E9DE;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    background-color: var(--off-white);
+}
+/*HEADER*/
+.homebar{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    background-color: var(--terracota);
+    align-items: center;
+    height: 55px;
+    padding: 0px 20px;
+    z-index: 1000;
+}
+
+.buttons{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    margin-right: 70px;
+    list-style: none;
+}
+
+.btn_nav{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--azul-acinzentado);
+    font-size: 20px;
+}
+
+/*costumização dos bts do menu*/
+
+.btn_nav.ativo{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--off-white);
+    font-size: 20px;
+}
+
+
+.montserrat-buttons {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+.logo img{
+    width: 160px;
+    margin-top: 12px;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/*MAIN*/
+
+
+/* ATENCAO ESSA SECAO SEPARA OS ELEMENTOS INICIAIS DA TELA POIS O HEADER ESTA FIXO E SOBRE OS OUTROS ELEMENTOS*/
+section{
+    min-width: 100vh;
+    margin-top: 60px;
+    box-sizing: border-box;
+    
+}
+
+
+/*------------------------------------------------projetos--------------------------------------------------*/
+
+#projetos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 100vh;
+    margin-bottom: 30px;
+}
+
+#projetos .titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--azulbase);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    width: 1125px;
+    height: 200px;
+    font-weight: 200;
+}
+
+#projetos .titulo h2 {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-weight: 300;
+    font-size: 35px;
+    letter-spacing: 10px;
+}
+
+.area_btn_projetos{
+    display: flex;
+    flex-direction: row;
+}
+
+.btn_projetos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_projetos img{
+    width: 425px;
+    cursor: pointer;
+}
+
+.residencial{
+    font-family: "Montserrat", sans-serif;
+    color: var(--azulbase);
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 1px;
+
+}
+
+.comercial{
+    font-family: "Montserrat", sans-serif;
+    color: var(--azulbase);
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+.residencial.ativa{
+    font-family: "Montserrat", sans-serif;
+    color: var(--terracota);
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+.comercial.ativa{
+    font-family: "Montserrat", sans-serif;
+    color: var(--terracota);
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+/*---------------------------------------------------------------------- CSS pag. validacao ---------------------------------------------------------------------*/
+
+.area_formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+
+.hero{
+    background-color: var(--terracota);
+    border-radius: 30px;
+    margin: 15px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.hero img{
+    width: 300px;
+}
+
+.formulario{
+    background-color: var(--azulbase);
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.linp{
+    margin-bottom: 10px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form label{
+    color: var(--off-white);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 550;
+}
+
+.form input{
+    background-color: #5155597f;
+    color: var(--off-white);
+}
+
+.form label + input{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+
+.btn{
+    margin-top: 15px;
+    background-color: var(--terracota);
+    border-radius: 4px;
+    box-shadow: none;
+    border: 2px groove var(--terracota);
+}
+
