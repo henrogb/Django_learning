@@ -6,4 +6,6 @@ from django.contrib.auth.decorators import login_required
 urlpatterns = [
     path('', views.home, name='home'),
     path('entrou/', views.entrou, name='entrou'),
+    path('logout/', views.logout_user, name='logout'),
+    path('register/', views.register, name='register'),
 ]
